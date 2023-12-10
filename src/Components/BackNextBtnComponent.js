@@ -5,7 +5,7 @@ import "../Styles/BackNextBtnComponent.css";
 const BackNextBtnComponent = ({ tab, onBack, loading, backTitle, nextTitle }) => {
   // Container div with a specific class for styling
   return (
-    <div className="back-next-btn-cont">
+    <div className="back-next-btn-continer">
       {/* Conditionally rendering Back button only if the current tab is not the first tab (tab index 0) */}
       {tab !== 0 && (
         <Button
