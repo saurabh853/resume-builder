@@ -24,8 +24,8 @@ import {
 // Functional component definition
 export default function ButtonMUI() {
   // Share URL and title for social media sharing
-  const shareUrl = "http://github.com";
-  const title = "GitHub";
+  const shareUrl = "https://resume-builder-silk.vercel.app/";
+  const title = "resume-builder";
 
   return (
     <>
