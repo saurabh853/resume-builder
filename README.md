@@ -79,13 +79,3 @@ The Resume Builder project is a web application that allows users to create prof
 
 1. Install dependencies using `npm install`.
 2. Run the application using `npm start`.
-
-## Additional Notes
-
-- Populate predefined templates and manage data using Redux.
-- Utilize Material UI for responsive and attractive UI components.
-- Implement form validation using react-hook-form.
-- Manage global state with Redux for template data.
-- Convert and download resumes as PDF using jspdf library.
-
-Feel free to explore the provided links for documentation and additional resources on the libraries used in the project.
