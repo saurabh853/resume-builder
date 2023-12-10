@@ -4,7 +4,7 @@
 
 The Resume Builder project is a web application that allows users to create professional resumes using predefined templates. The project is built using React and incorporates various libraries and tools for efficient development.
 
-## Hosted Website: https://resume-builder-gules.vercel.app/
+## Hosted Website: https://resume-builder-silk.vercel.app/
 
 ## Project Structure
 
