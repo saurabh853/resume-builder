@@ -73,7 +73,6 @@ const PersonalInfoComponent = (props) => {
 
   // Function to handle the "Next" button click
   const handleNext = (data) => {
-    // console.log(img.length);
     if (img.length) {
       setLoading(true);
       props.onAddPersonalInfo({ profileImg: img, ...data });
@@ -156,9 +155,6 @@ const PersonalInfoComponent = (props) => {
       window.removeEventListener("resize", handleWindowResize);
     };
   }, []);
-
-  // const profileImg = sotreImage.map((ele) => ele.img);
-  // console.log(props.personalInfo, errors);
   
   // Rendering the component JSX
   return (

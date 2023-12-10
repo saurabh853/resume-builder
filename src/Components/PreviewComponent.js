@@ -41,8 +41,6 @@ const PreviewComponent = (props) => {
     }
   };
 
-  // console.log(props.initialPersonalInfoState);
-
   // Function to handle saving the resume
   const handleSave = () => {
     if (resumeName.length === 0) {
@@ -58,14 +56,12 @@ const PreviewComponent = (props) => {
           setLoading(false);
           // Saving the user data in local storage
           let resumes = window.localStorage.getItem("resumes");
-          // console.log(resumes);
           if (resumes) {
             let newResumes = JSON.parse(resumes);
 
             let resumeFound = newResumes.find(
               (resume) => resume.id === props.selectedResumeId
             );
-              console.log(resumeFound)
             if (resumeFound) {
               // If the resume is found, update the existing resume
               const allNewResumes = newResumes.map((resume) => {

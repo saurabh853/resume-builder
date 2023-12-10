@@ -74,6 +74,8 @@ export const personalInfoReducer = (
         ...state,
         personalInfo: { ...state.personalInfo, ...action.payload },
       };
+    case actionTypes.CLEAR_ALL:
+      return initialPersonalInfoState;
     default:
       return state;
   }
@@ -90,11 +92,13 @@ export const workExperienceReducer = (state = initialWorkExperienceState, { type
       ...state,
       experiences: payload,
     }),
+    [actionTypes.CLEAR_ALL]: () => initialWorkExperienceState,
     default: () => state,
   };
 
   return (actions[type] || actions.default)();
 };
+
 
 // Reducer for key skills actions
 export const keySkillsReducer = (state = initialSkillsState, action) => {
@@ -114,6 +118,8 @@ export const keySkillsReducer = (state = initialSkillsState, action) => {
 
       return { ...state, skills: newSkills };
     }
+    case actionTypes.CLEAR_ALL:
+      return initialSkillsState;
     default:
       return state;
   }
@@ -127,6 +133,8 @@ export const educationDetailsReducer = (
   switch (action.type) {
     case actionTypes.ADDEDUCATION:
       return { ...state, educationInfo: action.payload };
+  case actionTypes.CLEAR_ALL:
+      return initialEducationState;
     default:
       return state;
   }

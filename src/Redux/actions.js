@@ -26,3 +26,5 @@ export const deleteSkill = (id) => createAction(actionTypes.DELETESKILL, id);
 
 // Action for adding education details
 export const addEducation = (details) => createAction(actionTypes.ADDEDUCATION, details);
+
+export const clearAllData = (details) => createAction(actionTypes.CLEAR_ALL, null);

@@ -7,3 +7,4 @@ export const ADDNEWSKILLS = "ADDNEWSKILLS";
 export const EDITSKILL = "EDITSKILL";
 export const DELETESKILL = "DELETESKILL";
 export const ADDEDUCATION = "ADDEDUCATION";
+export const CLEAR_ALL = "CLEAR_ALL";

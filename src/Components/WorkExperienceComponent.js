@@ -105,7 +105,6 @@ const WorkExperienceComponent = (props) => {
       <form onSubmit={handleSubmit(handleNext)}>
         {/* Mapping through each experience in the Redux store */}
         {props?.experiences.map((experience) => {
-          // console.log(experience)
           return (
             <div key={experience?.id} className="experience-cont">
               <h3 className="experience-heading">Experience {experience?.id}</h3>

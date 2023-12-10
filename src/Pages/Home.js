@@ -7,16 +7,22 @@ import BlackScreen from "../Components/BlackScreen";
 import { Button, Stack } from "@mui/material";
 import { connect } from "react-redux";
 import { useNavigate } from "react-router-dom";
-import { selectTemplate } from "../Redux/actions";
+import { selectTemplate,clearAllData } from "../Redux/actions";
 
 // Define mapStateToProps to map the state to component props
 const mapStateToProps = (state) => ({
   selectedTemplateId: state?.selectedTemplateReducer?.selectedTemplateId,
+  selectedResumeId: state?.selectedTemplateReducer?.selectedResumeId,
+  personalInfo: state?.personalInfoReducer?.personalInfo,
+  experiences: state?.workExperienceReducer?.experiences,
+  educationInfo: state?.educationDetailsReducer?.educationInfo,
+  skills: state?.keySkillsReducer?.skills,
 });
 
 // Define mapDispatchToProps to map dispatch actions to component props
 const mapDispatchToProps = (dispatch) => ({
   setSelectedTemplateId: (id) => dispatch(selectTemplate(id)),
+  clearAllUserData: () => dispatch(clearAllData()),
 });
 
 // Define the functional component 'Home'
@@ -27,6 +33,7 @@ const Home = (props) => {
   // Function to navigate to the "fill-details" page with the selected template id
   const navigateToFillDetails = (id) => {
     props.setSelectedTemplateId(id);
+    props.clearAllUserData();
     navigate("/template/fill-details");
   };
 
