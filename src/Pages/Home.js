@@ -59,7 +59,7 @@ const Home = (props) => {
                 gridTemplateColumns: {
                   sm: "1fr 1fr",
                   md: "1fr 1fr",
-                  lg: "1fr 1fr 0.3fr",
+                  lg: "1fr 1fr 1fr",
                   xl: "1fr 1fr 1fr 1fr",
                 },
                 gridGap: "30px",
