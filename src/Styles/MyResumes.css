@@ -6,7 +6,7 @@
 }
 @media screen and (max-width: 650px) {
   .my-resumes{
-    min-width: 620px;
+    /* min-width: 620px; */
   }
 }
 .resume {
