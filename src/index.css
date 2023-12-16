@@ -13,9 +13,3 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
-@media screen and (max-width: 650px) {
-  #root {
-    width: 750px;
-    height: 750px;
-  }
-}
