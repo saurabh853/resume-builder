@@ -23,7 +23,7 @@ const Template1 = (props) => {
     <Paper
       sx={{
         width: {
-          xs: "300px",
+          xs: "270px",
           sm: "400px",
           md: "450px",
           lg: "500px",
@@ -36,6 +36,7 @@ const Template1 = (props) => {
           lg: "650px",
           xl: "700px",
         },
+        overflow:'hidden',
       }}
       // Adding an id to the Paper component based on the index prop
       id={`${props.index}report`}

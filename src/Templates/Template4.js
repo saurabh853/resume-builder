@@ -22,7 +22,7 @@ const Template2 = (props) => {
     <Paper
       sx={{
         width: {
-          xs: "300px",
+          xs: "270px",
           sm: "400px",
           md: "450px",
           lg: "500px",
@@ -35,6 +35,7 @@ const Template2 = (props) => {
           lg: "650px",
           xl: "700px",
         },
+        overflow:'hidden',
       }}
       id={`${props.index}report`}
       elevation={3}

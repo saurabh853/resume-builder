@@ -23,7 +23,7 @@ const Template2 = (props) => {
       sx={{
         // Styling for the Paper component using the sx prop
         width: {
-          xs: "300px",
+          xs: "270px",
           sm: "400px",
           md: "450px",
           lg: "500px",
@@ -36,6 +36,7 @@ const Template2 = (props) => {
           lg: "650px",
           xl: "700px",
         },
+        overflow:'hidden',
       }}
       id={`${props.index}report`}
       elevation={3} // Elevation property for the Paper component

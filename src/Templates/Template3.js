@@ -23,7 +23,7 @@ const Template2 = (props) => {
       // Styling using Material-UI's sx prop
       sx={{
         width: {
-          xs: "300px",
+          xs: "270px",
           sm: "400px",
           md: "450px",
           lg: "500px",
@@ -36,6 +36,7 @@ const Template2 = (props) => {
           lg: "650px",
           xl: "700px",
         },
+        overflow:'hidden',
       }}
       // Assigning a unique ID to the Paper component
       id={`${props.index}report`}
