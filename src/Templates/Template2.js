@@ -23,8 +23,8 @@ const Template2 = (props) => {
       sx={{
         // Styling for the Paper component using the sx prop
         width: {
-          xs: "250px",
-          sm: "370px",
+          xs: "270px",
+          sm: "400px",
           md: "450px",
           lg: "500px",
           xl: "600px",
