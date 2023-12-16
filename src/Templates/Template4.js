@@ -21,20 +21,8 @@ const Template2 = (props) => {
     // Paper component with styles and unique id
     <Paper
       sx={{
-        width: {
-          xs: "350px",
-          sm: "400px",
-          md: "450px",
-          lg: "500px",
-          xl: "600px",
-        },
-        height: {
-          xs: "500px",
-          sm: "550px",
-          md: "600px",
-          lg: "650px",
-          xl: "700px",
-        },
+        width: "600px",
+        height: "700px",
       }}
       id={`${props.index}report`}
       elevation={3}
