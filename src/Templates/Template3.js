@@ -23,17 +23,17 @@ const Template2 = (props) => {
       // Styling using Material-UI's sx prop
       sx={{
         width: {
-          xs: "auto",
-          sm: "auto",
-          md: "auto",
-          lg: "auto",
+          xs: "300px",
+          sm: "400px",
+          md: "450px",
+          lg: "500px",
           xl: "600px",
         },
         height: {
-          xs: "auto",
-          sm: "auto",
-          md: "auto",
-          lg: "auto",
+          xs: "500px",
+          sm: "550px",
+          md: "600px",
+          lg: "650px",
           xl: "700px",
         },
       }}
