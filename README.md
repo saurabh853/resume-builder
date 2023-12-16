@@ -8,7 +8,7 @@ The Resume Builder project is a web application that allows users to create prof
 
 ## Project Structure
 
-## Application Folder Structure
+### Application Folder Structure
 
 ```  
 ├── public
