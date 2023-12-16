@@ -23,8 +23,8 @@ const Template2 = (props) => {
       // Styling using Material-UI's sx prop
       sx={{
         width: {
-          xs: "270px",
-          sm: "400px",
+          xs: "250px",
+          sm: "370px",
           md: "450px",
           lg: "500px",
           xl: "600px",
