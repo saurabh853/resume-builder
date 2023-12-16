@@ -22,8 +22,20 @@ const Template1 = (props) => {
     // Styling the Paper component with responsive width and height
     <Paper
       sx={{
-        width: "600px",
-        height: "700px",
+        width: {
+          xs: "350px",
+          sm: "400px",
+          md: "450px",
+          lg: "500px",
+          xl: "600px",
+        },
+        height: {
+          xs: "500px",
+          sm: "550px",
+          md: "600px",
+          lg: "650px",
+          xl: "700px",
+        },
       }}
       // Adding an id to the Paper component based on the index prop
       id={`${props.index}report`}
