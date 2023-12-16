@@ -8,6 +8,99 @@ The Resume Builder project is a web application that allows users to create prof
 
 ## Project Structure
 
+## Application Folder Structure
+
+```  
+├── public
+│   ├── favicon.ico  
+│   ├── index.html   
+│   └── manifest.json
+└── src
+    ├── App.css      
+    ├── App.js       
+    ├── Components
+    │   ├── BackNextBtnComponent.js
+    │   ├── BlackScreen.js
+    │   ├── CheckSelectedId.js
+    │   ├── Common
+    │   │   └── Navbar.js
+    │   ├── DetailFillingSidebar.js
+    │   ├── EducationComponent.js
+    │   ├── InputComponent.js
+    │   ├── KeySkillsComponent.js
+    │   ├── PersonalInfoComponent.js
+    │   ├── PreviewComponent.js
+    │   ├── SelectComponent.js
+    │   ├── TemplateEducationComponent.js    
+    │   ├── TemplateHeader.js
+    │   ├── TemplateHeading.js
+    │   ├── TemplateKeySkillComponent.js     
+    │   ├── TemplateOneExperienceComponent.js
+    │   └── WorkExperienceComponent.js       
+    ├── Data
+    │   ├── data.js
+    │   └── templates.js
+    ├── Images
+    │   ├── banner.png
+    │   ├── profile.png
+    │   ├── resume-template-1.JPG
+    │   ├── resume-template-2.JPG
+    │   ├── resume-template-3.JPG
+    │   ├── resume-template-4.JPG
+    │   └── sdfdrsf.pdf      
+    ├── Pages
+    │   ├── AboutUs.js       
+    │   ├── DetailsFilling.js
+    │   ├── Home.js
+    │   └── MyResumes.js
+    ├── Redux
+    │   ├── actionTypes.js
+    │   ├── actions.js
+    │   ├── reducers.js
+    │   └── store.js
+    ├── Styles
+    │   ├── AboutUs.css
+    │   ├── BackNextBtnComponent.css
+    │   ├── BlackScreen.css
+    │   ├── DetailsFilling.css
+    │   ├── DetailsFillingSideBar.css
+    │   ├── EducationComponent.css
+    │   ├── Home.css
+    │   ├── InputComponent.css
+    │   ├── KeySkillsComponent.css
+    │   ├── MyResumes.css
+    │   ├── Navbar.css
+    │   ├── PersonalInfoComponent.css
+    │   ├── PreviewComponent.css
+    │   ├── SelectComponent.css
+    │   ├── Template1.css
+    │   ├── Template2.css
+    │   ├── TemplateEducationComponent.css
+    │   ├── TemplateHeader.css
+    │   ├── TemplateHeading.css
+    │   ├── TemplateKeySkillComponent.css
+    │   ├── TemplateOneExperienceComponent.css
+    │   └── WorkExperienceComponent.css
+    ├── Templates
+    │   ├── Template1.js
+    │   ├── Template2.js
+    │   ├── Template3.js
+    │   └── Template4.js
+    ├── Utils
+    │   └── inputChecks.js
+    ├── __test__
+    │   ├── AboutUs.test.js
+    │   ├── BackNextBtnComponent.test.js
+    │   ├── BlackScreen.test.js
+    │   ├── DetailsFilling.test.js
+    │   ├── EducationComponent.test.js
+    │   ├── Home.test.js
+    │   ├── MyResume.test.js
+    │   └── PreviewComponent.test.js
+    ├── index.css
+    └── index.js
+```
+
 ### Libraries Used:
 
 1. **Material UI Library:**
