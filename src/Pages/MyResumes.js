@@ -98,8 +98,13 @@ const MyResumes = (props) => {
   // Function to download the selected resume as a PDF.
   const downloadResume = (id) => {
     const report = new JsPDF("portrait", "pt", "a4");
-    report.html(document.getElementById(`${id}report`)).then(() => {
+    const originalElement = document.getElementById(`${id}report`);
+    const duplicateElement = originalElement.cloneNode(true);
+    duplicateElement.style.width = '600px';
+    duplicateElement.style.height = '700px';
+    report.html(duplicateElement).then(() => {
       report.save(`resume.pdf`);
+      duplicateElement.remove();
     });
   };
 
