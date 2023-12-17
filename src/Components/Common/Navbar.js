@@ -1,6 +1,7 @@
 // Importing external styles for the Navbar
 import "../../Styles/Navbar.css";
 import * as React from "react";
+import { connect } from "react-redux";
 import { NavLink } from "react-router-dom";
 import AppBar from "@mui/material/AppBar";
 import Box from "@mui/material/Box";
@@ -11,8 +12,6 @@ import List from "@mui/material/List";
 import MenuIcon from "@mui/icons-material/Menu";
 import Toolbar from "@mui/material/Toolbar";
 import Typography from "@mui/material/Typography";
-import { connect } from "react-redux";
-// import Button from '@mui/material/Button';
 import { ThemeProvider, createTheme } from "@mui/material/styles";
 
 // Mapping dispatch to props, but it doesn't have any actions for now
@@ -21,14 +20,7 @@ const mapDispatchToProps = (dispatch) => ({});
 // Width of the drawer when it's open
 const drawerWidth = 240;
 
-// Theme for the logo
-const logoTheme = createTheme({
-  palette: {
-    primary: {
-      main: "#fff",
-    },
-  },
-});
+
 
 // Mapping state to props for the Redux connect
 const mapStateToProps = (state) => ({
@@ -38,6 +30,16 @@ const mapStateToProps = (state) => ({
   experiences: state.workExperienceReducer.experiences,
   educationInfo: state.educationDetailsReducer.educationInfo,
   skills: state.keySkillsReducer.skills,
+});
+
+
+// Theme for the logo
+const logoTheme = createTheme({
+  palette: {
+    primary: {
+      main: "#fff",
+    },
+  },
 });
 
 // Functional component for the Navbar

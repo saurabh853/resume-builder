@@ -1,9 +1,9 @@
 import React from 'react';
 import { render, screen } from '@testing-library/react';
-import BackNextBtnComponent from '../Components/BackNextBtnComponent';
+import BackNextBtn from '../Components/BackNextBtn';
 
 test('finds elements by class name', () => {
-  render(<BackNextBtnComponent />);
+  render(<BackNextBtn />);
   const backBtn = screen.getByClassName('back-next-btn-continer');
   expect(backBtn).toBeInTheDocument();
 });

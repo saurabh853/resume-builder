@@ -2,7 +2,7 @@ import { Button, Divider, MenuItem, Paper, Select } from "@mui/material";
 import React, { useState } from "react";
 import "../Styles/WorkExperienceComponent.css";
 import { connect } from "react-redux";
-import BackNextBtnComponent from "./BackNextBtnComponent";
+import BackNextBtn from "./BackNextBtn";
 import { addAllExperience, addExperience } from "../Redux/actions";
 import { useForm, Controller } from "react-hook-form";
 import InputComponent from "./InputComponent";
@@ -242,8 +242,8 @@ const WorkExperienceComponent = (props) => {
           </div>
         )}
         <Divider sx={{ margin: "10px 0px" }} />
-        {/* BackNextBtnComponent for navigation with loading state */}
-        <BackNextBtnComponent
+        {/* BackNextBtn for navigation with loading state */}
+        <BackNextBtn
           onNext={handleNext}
           onBack={handleBack}
           loading={loading}

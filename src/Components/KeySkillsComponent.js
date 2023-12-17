@@ -6,7 +6,7 @@ import { connect } from "react-redux";
 import { addNewSkills, deleteSkill, editSkill } from "../Redux/actions";
 import { useForm } from "react-hook-form";
 import InputComponent from "./InputComponent";
-import BackNextBtnComponent from "./BackNextBtnComponent";
+import BackNextBtn from "./BackNextBtn";
 import "../Styles/KeySkillsComponent.css";
 
 // Main functional component
@@ -101,7 +101,7 @@ const KeySkillsComponent = (props) => {
         <Divider className="key-skills-divider" />
 
         {/* Component for back and preview (next) buttons */}
-        <BackNextBtnComponent
+        <BackNextBtn
           onNext={handlePreview}
           loading={loading}
           tab={props.tab}

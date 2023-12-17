@@ -19,7 +19,7 @@ The Resume Builder project is a web application that allows users to create prof
     ├── App.css      
     ├── App.js       
     ├── Components
-    │   ├── BackNextBtnComponent.js
+    │   ├── BackNextBtn.js
     │   ├── BlackScreen.js
     │   ├── CheckSelectedId.js
     │   ├── Common
@@ -60,7 +60,7 @@ The Resume Builder project is a web application that allows users to create prof
     │   └── store.js
     ├── Styles
     │   ├── AboutUs.css
-    │   ├── BackNextBtnComponent.css
+    │   ├── BackNextBtn.css
     │   ├── BlackScreen.css
     │   ├── DetailsFilling.css
     │   ├── DetailsFillingSideBar.css
@@ -90,7 +90,7 @@ The Resume Builder project is a web application that allows users to create prof
     │   └── inputChecks.js
     ├── __test__
     │   ├── AboutUs.test.js
-    │   ├── BackNextBtnComponent.test.js
+    │   ├── BackNextBtn.test.js
     │   ├── BlackScreen.test.js
     │   ├── DetailsFilling.test.js
     │   ├── EducationComponent.test.js

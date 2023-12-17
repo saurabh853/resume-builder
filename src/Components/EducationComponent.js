@@ -5,7 +5,7 @@ import { useForm, Controller } from "react-hook-form";
 import { addEducation } from "../Redux/actions";
 import InputComponent from "./InputComponent";
 import SelectComponent from "./SelectComponent";
-import BackNextBtnComponent from "./BackNextBtnComponent";
+import BackNextBtn from "./BackNextBtn";
 import "../Styles/EducationComponent.css";
 
 // Array of years for the Select components
@@ -142,8 +142,8 @@ const EducationComponent = (props) => {
         </div>
         {/* Divider for visual separation */}
         <Divider sx={{ margin: "10px 0px" }} />
-        {/* BackNextBtnComponent for navigation and loading indicator */}
-        <BackNextBtnComponent
+        {/* BackNextBtn for navigation and loading indicator */}
+        <BackNextBtn
           onNext={handleNext}
           onBack={handleBack}
           loading={loading}

@@ -1,9 +1,10 @@
 // Importing necessary components and styles from Material-UI and other dependencies
-import { Avatar, Button, Divider, Paper, Snackbar } from "@mui/material";
 import React, { useState, useEffect } from "react";
 import "../Styles/PersonalInfoComponent.css";
-import BackNextBtnComponent from "./BackNextBtnComponent";
+import BackNextBtn from "./BackNextBtn";
 import InputComponent from "./InputComponent";
+import { addPersonalInfo } from "../Redux/actions";
+import { useForm } from "react-hook-form";
 import { connect } from "react-redux";
 import Avatar1 from "react-avatar-edit";
 import { styled } from "@mui/material/styles";
@@ -13,8 +14,7 @@ import DialogContent from "@mui/material/DialogContent";
 import DialogActions from "@mui/material/DialogActions";
 import IconButton from "@mui/material/IconButton";
 import CloseIcon from "@mui/icons-material/Close";
-import { addPersonalInfo } from "../Redux/actions";
-import { useForm } from "react-hook-form";
+import { Avatar, Button, Divider, Paper, Snackbar } from "@mui/material";
 
 // Mapping Redux state to component props
 const mapStateToProps = (state) => ({
@@ -356,7 +356,7 @@ const PersonalInfoComponent = (props) => {
         {/* Divider separating personal information and objective sections */}
         <Divider className="personal-details-divider" />
         {/* Component for rendering Back and Next buttons */}
-        <BackNextBtnComponent
+        <BackNextBtn
           // onNext={() => handleSubmit(handleNext)}
           loading={loading}
           tab={props?.tab}
