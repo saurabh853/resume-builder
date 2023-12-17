@@ -34,3 +34,6 @@
 .MuiInputBase-input.MuiOutlinedInput-input.MuiInputBase-inputMultiline {
   padding: 0px;
 }
+.resume-save-container #outlined-basic{
+  color: white;
+}
