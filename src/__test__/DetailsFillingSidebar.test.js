@@ -1,12 +1,12 @@
 import React from 'react';
 import { render, screen } from '@testing-library/react';
 import userEvent from '@testing-library/user-event';
-import DetailsFilling from '../Pages/DetailsFilling';
+import DetailFillingSidebar from '../Pages/DetailFillingSidebar';
 
 
-describe('DetailsFilling', () => {
+describe('DetailFillingSidebar', () => {
   it('renders correctly', () => {
-    render(<DetailsFilling tab={0} />);
+    render(<DetailFillingSidebar tab={0} />);
 
     // Check if the component renders without crashing
     expect(screen.getByText('Personal Info')).toBeInTheDocument();
@@ -16,7 +16,7 @@ describe('DetailsFilling', () => {
   });
 
   it('handles tab click', () => {
-    render(<DetailsFilling tab={0} />);
+    render(<DetailFillingSidebar tab={0} />);
 
     // Click on the "Work Experience" tab
     userEvent.click(screen.getByText('Work Experience'));
@@ -26,7 +26,7 @@ describe('DetailsFilling', () => {
   });
 
   it('handles menu click on smaller screens', () => {
-    render(<DetailsFilling tab={0} />);
+    render(<DetailFillingSidebar tab={0} />);
 
     // Click on the more button to open the menu
     userEvent.click(screen.getByLabelText('more'));
@@ -42,7 +42,7 @@ describe('DetailsFilling', () => {
     // Mock window resize
     global.innerWidth = 500;
 
-    render(<DetailsFilling tab={0} />);
+    render(<DetailFillingSidebar tab={0} />);
 
     // Check if the component renders the menu for smaller screens
     expect(screen.getByLabelText('more')).toBeInTheDocument();
