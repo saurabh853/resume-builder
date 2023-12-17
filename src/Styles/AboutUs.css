@@ -1,3 +1,6 @@
+.aboutUsCOntainer{
+    color: white;
+}
 .icons {
     display: block;
 }
@@ -7,5 +10,4 @@
 .aboutResumeImage{
     width: auto;
     height: auto;
-
 }

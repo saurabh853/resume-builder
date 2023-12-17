@@ -33,7 +33,7 @@ export default function ButtonMUI() {
       <Navbar />
 
       {/* Main content stack */}
-      <Stack p={{ xs: "15px", sm: "25px", md: "40px", lg: "60px " }}>
+      <Stack className="aboutUsCOntainer" p={{ xs: "15px", sm: "25px", md: "40px", lg: "60px " }}>
         <h2 className="template-header-title">Resume Builder</h2>
 
         {/* Stack for arranging content in a row or column */}

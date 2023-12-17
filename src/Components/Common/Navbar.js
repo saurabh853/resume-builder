@@ -37,7 +37,7 @@ const mapStateToProps = (state) => ({
 const logoTheme = createTheme({
   palette: {
     primary: {
-      main: "#fff",
+      main: "#1f2937",
     },
   },
 });
