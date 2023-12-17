@@ -40,7 +40,7 @@
   transform: none;
   visibility: visible;
   text-transform: capitalize;
-  padding-left: 3px;
+  margin-left: 3px;
 }
 
 .no-resumes-container {
