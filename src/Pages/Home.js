@@ -57,7 +57,7 @@ const Home = (props) => {
                 width: "100%",
                 display: "grid",
                 gridTemplateColumns: {
-                  sm: "1fr 1fr",
+                  sm: "1fr",
                   md: "1fr 1fr",
                   lg: "1fr 1fr 1fr",
                   xl: "1fr 1fr 1fr 1fr",
